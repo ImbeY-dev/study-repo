@@ -68,3 +68,99 @@ git clone https://github.com/ImbeY-dev/study-repo.git
 cd study-repo
 code .
 ```
+---
+
+## 6. React（Vite + TypeScript）プロジェクトの作成
+
+study-repo の中に React プロジェクトを作成しました。
+
+### 1. Vite プロジェクトの作成
+
+以下のコマンドを実行し、framework として **React**、variant として **TypeScript** を選択しました。
+```
+npm create vite@latest my-app --template react-ts
+```
+
+### 2. プロジェクトフォルダへ移動
+```
+cd my-app
+```
+
+### 3. 依存パッケージのインストール
+```
+npm install
+```
+
+### 4. 開発サーバーの起動
+```
+npm run dev
+```
+
+表示された URL（例：`http://localhost:5173`）にアクセスすると、  
+Vite + React + TypeScript の初期画面が表示されます。
+
+---
+
+---
+
+## 7. GitHub への push（変更の反映）
+
+React プロジェクトを追加したため、変更内容を GitHub に反映しました。
+
+### 1. 変更内容の確認
+```
+git status
+```
+
+変更されたファイル（例：README.md や my-app フォルダ）が表示されます。
+
+### 2. 変更をステージング（Git に登録）
+```
+git add .
+```
+
+### 3. コミット（変更にメッセージをつけて保存）
+```
+git commit -m "Add React project (Vite + TypeScript)"
+```
+
+メッセージは任意で OK。
+
+### 4. GitHub へ push（反映）
+```
+git push
+```
+
+GitHub の study-repo に変更が反映されます。
+
+---
+
+## 8. VS Code のおすすめ拡張機能（備考）
+
+React / TypeScript / WSL 開発を快適にするために、以下の拡張機能を導入しました。
+
+### 🔹 GitHub Copilot
+AI によるコード補完を行う拡張機能。  
+コードの提案、関数の補完、コメントからのコード生成などが可能で、学習効率が大幅に向上します。
+
+### 🔹 ESLint
+JavaScript / TypeScript のコード品質を保つための静的解析ツール。  
+コードの書き方を統一し、エラーを事前に防ぐことができます。
+
+### 🔹 Prettier – Code formatter
+コードを自動整形するための拡張機能。  
+保存時に自動でフォーマットされ、コードの読みやすさと統一性が向上します。  
+ESLint と併用することで、より安定したコード品質を保つことができます。
+
+### 🔹 GitLens
+
+Git の履歴や変更点を視覚的に確認できる強力な拡張機能。  
+誰が・いつ・どの行を変更したかが一目でわかり、コードレビューや学習に役立ちます。
+
+主な機能：
+- 行ごとの blame 表示
+- コミット履歴の可視化
+- ファイルごとの変更差分の確認
+- GitHub との連携強化
+
+---
