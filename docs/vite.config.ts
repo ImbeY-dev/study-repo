@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [react()],
   base: './',
   build: {
-    outDir: 'dist'
+    outDir: '.'  // docs 直下に出力
   }
 })
